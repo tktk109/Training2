@@ -44,9 +44,9 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
 
   # Print deprecation notices to the stderr.
-  
+
   # config.active_support.deprecation = :stderr
-　
+  config.active_support.deprecation = :silence
   # Raise exceptions for disallowed deprecations.
   config.active_support.disallowed_deprecation = :raise
 
@@ -54,7 +54,7 @@ Rails.application.configure do
   config.active_support.disallowed_deprecation_warnings = []
 
 
-　config.active_support.deprecation = :silence
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
